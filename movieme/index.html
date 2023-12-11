@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>2023's Top Domestic Movies</title>
+        <link rel="stylesheet" href="src/style.css">
+    </head>
+<body>
+    <header>
+        <h1>2023's Top Domestic Movies</h1>
+    </header>
+
+    <section id="movie-input-section">
+        <h2>Add Your Movie</h2>
+        <form id="movie-form">
+            <label for="movie-title">Movie Title:</label>
+            <input type="text" id="movie-title" name="movie-title" required>
+    
+            <label for="critic-score">Critic Score:</label>
+            <input type="number" id="critic-score" name="critic-score" required>
+    
+            <label for="audience-score">Audience Score:</label>
+            <input type="number" id="audience-score" name="audience-score" required>
+    
+            <label for="domestic-gross">Domestic Gross:</label>
+            <input type="number" id="domestic-gross" name="domestic-gross" required>
+    
+            <label for="movie-genre">Movie Genre:</label>
+            <select id="movie-genre" name="movie-genre" required>
+                <option value="">Select a Genre</option>
+                <option value="Action">Action</option>
+                <option value="Adventure">Adventure</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Drama">Drama</option>
+                <option value="Horror">Horror</option>
+                <option value="Concert">Concert</option>
+                <option value="Documentary">Documentary</option>
+                <option value="Musical">Musical</option>
+                <option value="Romance">Romance</option>
+                <option value="Sci-Fi">Sci-Fi</option>
+                <option value="Thriller">Thriller</option>
+            </select>
+    
+            <button type="submit">Add Movie</button>
+        </form>
+    </section>
+    
+    <section id="movie-list-section">
+        <h2>Movies</h2>
+        <ul id="movies-list"></ul>
+        <button id="reset-movies">Reset Movies</button>
+    </section>
+    
+    <section id="domestic-box-office-chart">
+        <h2>Domestic Box Office</h2>
+        <canvas id="bar-chart"></canvas>
+    </section>
+    
+    <section id="genre-gross-chart">
+        <h2>Genres and Total Gross</h2>
+        <canvas id="doughnut-chart"></canvas>
+    </section>
+    
+    <section id="critic-audience-chart">
+        <h2>Critic vs Audience Score</h2>
+        <canvas id="scatter-chart"></canvas>
+    </section>
+    
+    <footer>
+        <!-- Footer content-->
+    </footer>
+
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>
